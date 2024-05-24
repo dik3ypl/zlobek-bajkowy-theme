@@ -1,5 +1,7 @@
-$primary-color: #3498db;
-$secondary-color: #2ecc71;
+@import "variables";
+
+@import "components/header";
+@import "components/footer";
 
 body {
     font-family: Arial, sans-serif;
@@ -8,24 +10,3 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: $primary-color;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-
-main {
-    padding: 2rem;
-    color: #333;
-}
-
-footer {
-    background-color: $secondary-color;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
