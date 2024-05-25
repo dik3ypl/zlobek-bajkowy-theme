@@ -3,19 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja Strona</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Slick Slider</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
 </head>
 <body>
-    <header>
-        <h1>Witamy na naszej stronie</h1>
-    </header>
-    <main>
-        <p>To jest przykładowy tekst na naszej stronie.</p>
-    </main>
-    <footer>
-        <p>Stopka strony</p>
-    </footer>
-    <script src="index.js"></script>
+<div class="slider-container">
+    <div class="slider">
+        <div class="slider-element">
+            <img src="https://via.placeholder.com/1024x800?text=Slide+1" alt="Slide 1">
+            <div class="slider-caption">Slide 1 Caption</div>
+        </div>
+        <div class="slider-element">
+            <img src="https://via.placeholder.com/1024x800?text=Slide+2" alt="Slide 2">
+            <div class="slider-caption">Slide 2 Caption</div>
+        </div>
+        <div class="slider-element">
+            <img src="https://via.placeholder.com/1024x800?text=Slide+3" alt="Slide 3">
+            <div class="slider-caption">Slide 3 Caption</div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            cssEase: 'linear',
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: true
+        });
+    });
+</script>
 </body>
 </html>
