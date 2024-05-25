@@ -1,6 +1,7 @@
 header {
   background-color: $background-1;
   color: $text-dark;
+  position: relative;
   padding: 1rem;
   text-align: center;
   display: flex;
@@ -124,7 +125,31 @@ main {
 
 @media (max-width: 1250px) {
   .navbar {
-    display: none;
+    position: fixed;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    top: -100vh;
+    background-color: $color-1;
+    transition: .4s;
+    margin: 0;
+    left: 0;
+
+    >li {
+      display: block;
+      border-radius: 20px;
+      background-color: $color-1;
+
+      .dropdown {
+        display: none;
+      }
+    }
+  }
+
+  .navbar-revealed {
+    top: 0;
+    transition: .4s;
+    position: fixed;
   }
 
   .hamburger {
