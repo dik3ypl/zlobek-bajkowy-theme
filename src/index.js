@@ -1,3 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('Strona została załadowana.');
+    let hamburger = document.querySelector('.hamburger')
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("hamburger-active")
+    })
 });
