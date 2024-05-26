@@ -18,9 +18,9 @@ $(document).ready(function () {
         dots: true,
         infinite: true,
         speed: 500,
-        fade: true,
         cssEase: 'linear',
         autoplay: true,
-        autoplaySpeed: 300
+        autoplaySpeed: 3000,
+        arrows: false // TODO: change to true after deploy
     });
 });
