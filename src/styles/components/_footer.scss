@@ -18,6 +18,7 @@ footer {
 
     &-left {
       border-right: 1px solid white;
+      text-align: right;
 
       @media (max-width: 768px) {
         border-right: 0;
