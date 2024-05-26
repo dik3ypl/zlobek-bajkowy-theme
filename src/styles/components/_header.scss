@@ -68,11 +68,11 @@ header {
       list-style: none;
       width: fit-content;
       block-size: fit-content;
-
       margin: 10px;
 
       a {
         border-radius: 20px;
+        text-wrap: nowrap;
       }
 
       :hover {
@@ -82,7 +82,7 @@ header {
 
     .dd-subcontent {
       background-color: $color-1-hover;
-      margin: 20px;
+      margin: 0 20px;
       padding: 0 20px;
       border-radius: 20px;
       display: flex;
@@ -124,6 +124,57 @@ main {
   color: #333;
 }
 
+.slick-prev {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: url('../src/images/icons/left.svg') no-repeat;
+  filter: drop-shadow(0 0 5px #333);
+}
+
+.slick-next {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url('../src/images/icons/right.svg') no-repeat;
+  filter: drop-shadow(0 0 5px #333);
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: "" !important;
+}
+
+.slick-prev:hover {
+  filter: invert(48%);
+}
+
+.slick-next:hover {
+  filter: invert(48%);
+}
+
+.slick-prev:hover,
+.slick-prev:focus {
+  background: url('../src/images/icons/left.svg') no-repeat;
+  z-index: 5 !important;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slick-next:hover,
+.slick-next:focus {
+  background: url('../src/images/icons/right.svg') no-repeat;
+  z-index: 5 !important;
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (max-width: 1250px) {
   .navbar {
     position: fixed;
@@ -147,6 +198,10 @@ main {
     }
   }
 
+  header {
+    z-index: 100;
+  }
+
   .navbar-revealed {
     top: 0;
     transition: .4s;
@@ -160,6 +215,7 @@ main {
     width: 60px;
     height: 60px;
     transition: .3s;
+    z-index: 101;
 
     div {
       background-color: $color-2;
@@ -185,4 +241,6 @@ main {
       transform: translateY(-15px) rotate(-45deg);
     }
   }
+
+
 }

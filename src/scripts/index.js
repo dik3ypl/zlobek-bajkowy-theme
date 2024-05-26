@@ -21,6 +21,6 @@ $(document).ready(function () {
         cssEase: 'linear',
         autoplay: true,
         autoplaySpeed: 3000,
-        arrows: false // TODO: change to true after deploy
+        arrows: true
     });
 });
