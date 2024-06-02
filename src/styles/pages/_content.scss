@@ -1,0 +1,67 @@
+.content {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  column-gap: 0.2rem;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+
+  &-title {
+    font-size: 3.2rem;
+    margin: 1rem;
+  }
+
+  &-text {
+    width: 61%;
+    padding: 1rem;
+    border-radius: 20px;
+
+    p {
+      margin: 1em;
+    }
+
+    h3 {
+      margin: 1.2em;
+    }
+  }
+
+  &-image {
+    width: 31%;
+    border-radius: 20px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      object-fit: cover;
+    }
+  }
+
+  &-full {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 20px;
+
+    p {
+      margin: 1em;
+    }
+  }
+
+  &-background-1 {
+    background-color: $color-1;
+  }
+
+  &-background-2 {
+    background-color: $color-2;
+  }
+
+  &-background-3 {
+    background-color: $color-3;
+  }
+
+  &-background-4 {
+    background-color: $color-4;
+  }
+}
