@@ -9,6 +9,17 @@ document.addEventListener('DOMContentLoaded', () => {
         hamburger.classList.toggle("hamburger-active")
         navbar.classList.toggle('navbar-revealed')
     })
+
+    // let path1 = document.getElementById('path2357')
+    // let path1Len = path1.getTotalLength()
+    // console.log(path1Len)
+    // setInterval(() => {
+    //     setTimeout(() => {
+    //         path1.style.strokeDasharray = 0;
+    //         console.log("test")
+    //     }, 3000)
+    //     path1.style.strokeDasharray = path1Len;
+    // }, 6000)
 });
 
 // Slider

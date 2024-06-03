@@ -1,0 +1,33 @@
+.bgpath {
+    width: 100vw;
+    z-index: -1;
+    position: absolute;
+    top: 450px;
+}
+
+#path2357 {
+    width: 100vw;
+    /* Ensure the stroke is visible */
+    fill: transparent;
+    /* Ensure the fill doesn't hide the stroke */
+    stroke-width: 4;
+    stroke-dasharray: 1300;
+    /* This will be set dynamically */
+    stroke-dashoffset: 1300;
+    animation: draw 6s ease-in forwards infinite;
+}
+
+@keyframes draw {
+    0% {
+        stroke-dashoffset: 1300;
+        /* This will be set dynamically */
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+    }
+
+    100% {
+        stroke-dashoffset: -1300;
+    }
+}

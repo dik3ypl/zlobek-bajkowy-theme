@@ -11,6 +11,31 @@ header {
   padding: 0 20px;
 }
 
+.logo-box {
+  display: flex;
+  flex-direction: row;
+
+  img {
+    height: 80px;
+    margin: 5px 20px;
+  }
+
+  div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
 .navbar {
   z-index: 99;
   display: inline-flex;
@@ -175,7 +200,17 @@ main {
   background-position: center;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1500px) {
+  header {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1150px) {
+  header {
+    flex-direction: row;
+  }
+
   .navbar {
     position: fixed;
     display: block;
@@ -243,4 +278,12 @@ main {
   }
 
 
+}
+
+@media(max-width: 500px) {
+  .logo-box {
+    div {
+      display: none;
+    }
+  }
 }
