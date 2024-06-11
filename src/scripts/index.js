@@ -35,3 +35,18 @@ $(document).ready(function () {
         arrows: true
     });
 });
+
+// Dynamic .container padding
+
+document.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector('header');
+    const mainContent = document.querySelector('.container');
+
+    function adjustPadding() {
+        const headerHeight = header.offsetHeight;
+        mainContent.style.paddingTop = headerHeight + 'px';
+    }
+
+    adjustPadding();
+    window.addEventListener('resize', adjustPadding);
+});
