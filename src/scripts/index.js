@@ -72,15 +72,17 @@ document.addEventListener('DOMContentLoaded', () => {
 // Slider
 
 $(document).ready(function () {
-    $('.slider').slick({
-        dots: true,
-        infinite: true,
-        speed: 500,
-        cssEase: 'linear',
-        autoplay: true,
-        autoplaySpeed: 3000,
-        arrows: true
-    });
+    if ($('.slider') !== null) {
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            cssEase: 'linear',
+            autoplay: true,
+            autoplaySpeed: 3000,
+            arrows: true
+        });
+    }
 });
 
 // Dynamic .container padding
