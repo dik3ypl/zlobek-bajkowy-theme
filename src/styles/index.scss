@@ -13,11 +13,13 @@
 @import "components/banner-with-image-right";
 @import "components/page-title";
 @import "components/arrow-button";
+@import "components/background";
+
 
 @import "pages/post";
 @import "pages/content";
 @import "pages/posts-list";
-@import "components/background";
+@import "pages/offer";
 
 @import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap');
 
@@ -27,4 +29,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Mitr', serif;
+
+  a {
+    text-decoration: none;
+    color: $text-dark;
+  }
 }

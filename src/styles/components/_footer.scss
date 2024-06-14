@@ -51,7 +51,10 @@ footer {
         justify-content: center;
       }
 
-
+      p {
+        width: 100%;
+        text-align: center;
+      }
 
       ul {
         list-style: none;
@@ -62,7 +65,7 @@ footer {
         justify-content: flex-start;
 
         li {
-          flex: 1 1 45%;
+          flex: 1 1 50%;
           margin: 0.5rem 0;
           text-align: left;
         }
@@ -71,7 +74,7 @@ footer {
           justify-content: center;
 
           li {
-            flex: 1 1 45%;
+            flex: 1 1 50%;
             text-align: center;
           }
         }

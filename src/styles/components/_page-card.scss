@@ -30,14 +30,29 @@
 
   &-1 {
     background-color: $color-1;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $color-1-hover;
+    }
   }
 
   &-2 {
     background-color: $color-5;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $color-5-hover;
+    }
   }
 
   &-3 {
     background-color: $color-3;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $color-3-hover;
+    }
   }
 
   &-container {

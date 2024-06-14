@@ -4,6 +4,7 @@
   min-height: 10vh;
   border-radius: 20px;
   display: flex;
+  flex-wrap: wrap;
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
@@ -16,6 +17,10 @@
     background-color: $color-4;
     border-radius: 50%;
 
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
     img {
       object-fit: cover;
       width: 100%;
@@ -26,6 +31,10 @@
 
   &-content {
     width: 65%;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
 
     p {
       text-align: justify;
