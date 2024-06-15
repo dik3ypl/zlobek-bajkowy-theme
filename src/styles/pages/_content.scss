@@ -1,17 +1,24 @@
 .content {
   width: 100%;
-  margin-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   column-gap: 0.2rem;
   text-align: justify;
-  margin-bottom: 1.5rem;
+
+  &-right {
+    flex-wrap: wrap-reverse !important;
+  }
 
   &-text {
     width: 61%;
     padding: 1rem;
     border-radius: 20px;
+    margin-top: 2rem;
+
+    @media (max-width: 960px) {
+      width: 100%;
+    }
 
     p {
       margin: 1em;
@@ -25,6 +32,11 @@
   &-image {
     width: 31%;
     border-radius: 20px;
+    margin-top: 2rem;
+
+    @media (max-width: 960px) {
+      width: 100%;
+    }
 
     img {
       width: 100%;
@@ -58,5 +70,9 @@
 
   &-background-4 {
     background-color: $color-4;
+  }
+
+  &-background-5 {
+    background-color: $color-5;
   }
 }
