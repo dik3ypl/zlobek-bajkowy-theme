@@ -36,7 +36,7 @@ $contentBlocks = get_field('content_blocks');
                 </div>
                 <div class="posts-list-element-text">
                     <h3><?php echo esc_html($title); ?></h3>
-                    <p><?php echo wp_kses_post($text); ?></p>
+                    <p><?php echo $text; ?></p>
                 </div>
             </div>
             <?php $index++; ?>

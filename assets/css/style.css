@@ -1510,6 +1510,28 @@ footer .footer-copyright p {
   }
 }
 
+.list-points {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+  margin-bottom: 1rem;
+  align-items: stretch;
+}
+.list-points-item, .list-points-right, .list-points-left {
+  border-radius: 20px;
+  padding: 1rem;
+  max-width: 80%;
+}
+.list-points-left {
+  align-self: flex-start;
+  background-color: #cdbff5;
+}
+.list-points-right {
+  align-self: flex-end;
+  background-color: #29d987;
+}
+
 body {
   background-color: #f4f4f4;
   color: #333;
