@@ -10,6 +10,14 @@ document.addEventListener('DOMContentLoaded', () => {
         navbar.classList.toggle('navbar-revealed')
     })
 
+    let footer = document.querySelector('footer');
+    document.querySelector('.clouds').style.marginBottom = (footer.offsetHeight - 10) + "px";
+
+    window.addEventListener('resize', () => {
+        let footer = document.querySelector('footer');
+        document.querySelector('.clouds').style.marginBottom = (footer.offsetHeight - 10) + "px";
+    })
+
     const numStars = 50;
     const starsBox = document.getElementById("starMask")
     const pageHeight = window.innerHeight;

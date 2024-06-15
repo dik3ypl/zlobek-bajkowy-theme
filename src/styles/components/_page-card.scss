@@ -1,7 +1,8 @@
 .page-card {
   width: 30%;
   padding: 1rem;
-  margin: 0.4rem auto;
+  margin: 0 auto;
+  margin-top: 10px;
   border-radius: 20px;
   position: relative;
   z-index: 1;
@@ -38,11 +39,11 @@
   }
 
   &-2 {
-    background-color: $color-5;
+    background-color: hsl(345, 92%, 64%);
     transition: 0.3s;
 
     &:hover {
-      background-color: $color-5-hover;
+      background-color: hsl(14, 98%, 63%);
     }
   }
 

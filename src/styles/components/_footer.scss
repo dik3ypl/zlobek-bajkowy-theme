@@ -7,6 +7,8 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: left;
+  position: absolute;
+  bottom: 0;
 
   .footer-column {
     flex: 1 1 30%;
@@ -27,6 +29,20 @@ footer {
     }
 
     &-right {
+      >div {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        >div {
+          margin-left: 10px;
+        }
+
+        p {
+          margin: 0;
+        }
+      }
+
       border: 0;
       margin-right: 0;
 
@@ -93,4 +109,8 @@ footer {
       margin: 0;
     }
   }
+}
+
+.footer-section-title {
+  text-align: center;
 }
