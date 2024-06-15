@@ -45,6 +45,21 @@
       }
     }
 
+    &-pdf {
+      padding: 0.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      img {
+        max-width: 90%;
+        height: auto;
+        width: auto;
+        max-height: 90%;
+      }
+    }
+
     &-text {
       flex: 1;
       padding: 1rem;

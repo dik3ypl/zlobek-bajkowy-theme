@@ -15,7 +15,15 @@
   background-size: 2.5rem;
   transition: background-position 0.3s ease;
   cursor: pointer;
-  align-self: flex-end;
+
+  &-other {
+    display: block;
+    width: 40% !important;
+
+    @media(max-width: 600px) {
+      width: 70% !important;
+    }
+  }
 
   @media(max-width: 1200px) {
     background-size: 1.5rem;

@@ -948,7 +948,15 @@ footer .footer-copyright p {
   background-size: 2.5rem;
   transition: background-position 0.3s ease;
   cursor: pointer;
-  align-self: flex-end;
+}
+.arrow-button-other {
+  display: block;
+  width: 40% !important;
+}
+@media (max-width: 600px) {
+  .arrow-button-other {
+    width: 70% !important;
+  }
 }
 @media (max-width: 1200px) {
   .arrow-button {
@@ -1276,6 +1284,19 @@ footer .footer-copyright p {
   .posts-list-element-image {
     flex: 0 0 40%;
   }
+}
+.posts-list-element-pdf {
+  padding: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.posts-list-element-pdf img {
+  max-width: 90%;
+  height: auto;
+  width: auto;
+  max-height: 90%;
 }
 .posts-list-element-text {
   flex: 1;
