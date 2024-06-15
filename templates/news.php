@@ -55,8 +55,6 @@ $pageTitle = get_the_title();
             $index++;
         endwhile;
         wp_reset_postdata();
-    else :
-        echo '<p>No posts found.</p>';
     endif;
     ?>
 </div>

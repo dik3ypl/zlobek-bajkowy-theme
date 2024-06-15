@@ -383,7 +383,7 @@ main {
   display: block;
   width: 40px;
   height: 40px;
-  background: url("../src/images/icons/left.svg") no-repeat;
+  background: url("../images/icons/left.svg") no-repeat;
   filter: drop-shadow(0 0 5px #333);
 }
 
@@ -391,7 +391,7 @@ main {
   display: block;
   width: 20px;
   height: 20px;
-  background: url("../src/images/icons/right.svg") no-repeat;
+  background: url("../images/icons/right.svg") no-repeat;
   filter: drop-shadow(0 0 5px #333);
 }
 
@@ -410,7 +410,7 @@ main {
 
 .slick-prev:hover,
 .slick-prev:focus {
-  background: url("../src/images/icons/left.svg") no-repeat;
+  background: url("../images/icons/left.svg") no-repeat;
   z-index: 5 !important;
   width: 40px;
   height: 40px;
@@ -421,7 +421,7 @@ main {
 
 .slick-next:hover,
 .slick-next:focus {
-  background: url("../src/images/icons/right.svg") no-repeat;
+  background: url("../images/icons/right.svg") no-repeat;
   z-index: 5 !important;
   width: 40px;
   height: 40px;
@@ -781,13 +781,13 @@ footer .footer-copyright p {
   }
 }
 .page-card-1-additional {
-  background: url("../src/images/icons/blob1.svg") no-repeat top right;
+  background: url("../images/icons/blob1.svg") no-repeat top right;
 }
 .page-card-2-additional {
-  background: url("../src/images/icons/blob2.svg") no-repeat top right;
+  background: url("../images/icons/blob2.svg") no-repeat top right;
 }
 .page-card-3-additional {
-  background: url("../src/images/icons/blob3.svg") no-repeat top right;
+  background: url("../images/icons/blob3.svg") no-repeat top right;
 }
 .page-card-1 {
   background-color: #67D9FE;
@@ -942,7 +942,7 @@ footer .footer-copyright p {
   font-size: 1rem;
   font-weight: 550;
   color: white;
-  background-image: url("../src/images/icons/arrow.svg");
+  background-image: url("../images/icons/arrow.svg");
   background-repeat: no-repeat;
   background-position: calc(100% - 1rem) 50%;
   background-size: 2.5rem;

@@ -38,7 +38,7 @@ $card3Content = get_field('card3Content');
         </div>
         <div class="offer-additional-information-container-column">
             <div class="offer-additional-information-container-column-subcontent">
-                <img id="pin-icon" src="<?php echo get_template_directory_uri(); ?>/src/images/icons/address.svg"
+                <img id="pin-icon" src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/address.svg"
                      alt="Address Icon">
                 <div>
                     <p><?php echo esc_html($address); ?></p>
