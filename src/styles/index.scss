@@ -15,7 +15,6 @@
 @import "components/arrow-button";
 @import "components/background";
 
-
 @import "pages/post";
 @import "pages/content";
 @import "pages/posts-list";
@@ -33,6 +32,6 @@ body {
 
   a {
     text-decoration: none;
-    color: $text-dark;
+    color: #333;
   }
 }

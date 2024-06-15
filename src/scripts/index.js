@@ -26,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     for (let i = 0; i < numStars; i++) {
         let star = document.createElementNS('http://www.w3.org/2000/svg', 'g');
         let zeroXAxis = Math.random() < pageHeight / (pageHeight + pageWidth)
-        console.log(zeroXAxis);
         let posXbase = 0, posYbase = 0, posX = 0, posY = 0;
         if (zeroXAxis) {
             posXbase = -32;
@@ -50,7 +49,6 @@ document.addEventListener('DOMContentLoaded', () => {
         setInterval(() => {
             if (posX > window.innerWidth || posY > window.innerHeight) {
                 star.style.transition = 'all 0s';
-                console.log(star);
                 posX = posXbase;
                 posY = posYbase;
                 star.setAttribute("transform", `translate(${posX}, ${posY})  scale(1.5)`)
@@ -64,17 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }, step * 1000)
         starsBox.appendChild(star);
     }
-
-    // let path1 = document.getElementById('path2357')
-    // let path1Len = path1.getTotalLength()
-    // console.log(path1Len)
-    // setInterval(() => {
-    //     setTimeout(() => {
-    //         path1.style.strokeDasharray = 0;
-    //         console.log("test")
-    //     }, 3000)
-    //     path1.style.strokeDasharray = path1Len;
-    // }, 6000)
 });
 
 // Slider
