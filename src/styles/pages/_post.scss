@@ -1,12 +1,18 @@
-.post-container {
+.post-image {
   width: 100%;
-  height: 40vh;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  display: flex;
-  align-items: center;
+  height: 100%;
+  object-fit: cover;
+
+  &-container {
+    width: 100%;
+    height: 40vh;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    display: flex;
+    align-items: center;
+  }
 }
 
 .post-title {

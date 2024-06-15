@@ -1,7 +1,3 @@
 .idea
 node_modules
-
-# dist build files
-dist/*.js
-dist/*.css
 dist/*.css.map
