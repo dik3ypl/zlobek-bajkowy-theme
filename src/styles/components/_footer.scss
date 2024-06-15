@@ -10,6 +10,10 @@ footer {
   position: absolute;
   bottom: 0;
 
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
   .footer-column {
     flex: 1 1 30%;
     padding: 1rem;
@@ -89,6 +93,10 @@ footer {
           flex: 1 1 50%;
           margin: 0.5rem 0;
           text-align: left;
+
+          a {
+            color: white;
+          }
         }
 
         @media (max-width: 1024px) {
