@@ -29,6 +29,14 @@
     }
   }
 
+  &-text-50 {
+    width: calc(47% - 2rem);
+
+    @media (max-width: 960px) {
+      width: 100%;
+    }
+  }
+
   &-image {
     width: 31%;
     border-radius: 20px;
@@ -43,6 +51,14 @@
       height: 100%;
       border-radius: 20px;
       object-fit: cover;
+    }
+  }
+
+  &-image-50 {
+    width: 47%;
+
+    @media (max-width: 960px) {
+      width: 100%;
     }
   }
 

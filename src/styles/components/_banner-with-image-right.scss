@@ -8,6 +8,11 @@
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: $color-1-hover;
+  }
 
   &-image {
     height: 100%;
