@@ -4,8 +4,8 @@
 
   #pin-icon {
     position: absolute;
-    height: 300px;
-    width: 200px;
+    height: 400px;
+    width: 300px;
     top: -100px;
     left: 20px;
     object-fit: contain;
@@ -35,7 +35,8 @@
           text-align: right;
 
           p {
-            color: #fec2b3 !important;
+            color: #fff !important;
+            font-size: 2.5rem;
           }
         }
 
