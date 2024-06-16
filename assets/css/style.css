@@ -1370,8 +1370,8 @@ div.footer-container {
 }
 .offer-additional #pin-icon {
   position: absolute;
-  height: 400px;
-  width: 300px;
+  height: 300px;
+  width: 200px;
   top: -100px;
   left: 20px;
   object-fit: contain;
@@ -1407,8 +1407,7 @@ div.footer-container {
   text-align: right;
 }
 .offer-additional-information-container-column-subcontent div p {
-  color: #fff !important;
-  font-size: 2.5rem;
+  color: #fec2b3 !important;
 }
 @media (max-width: 500px) {
   .offer-additional-information-container-column-subcontent img {
