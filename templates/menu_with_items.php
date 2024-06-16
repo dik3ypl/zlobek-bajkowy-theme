@@ -9,10 +9,10 @@ get_header();
 $pageTitle = get_field('pageTitle');
 $image = get_field('image');
 
-// Map info
-$email = get_field('contact_email');
+// Hours
 $phone = get_field('contact_phone');
 $other = get_field('contact_other');
+$hours = get_field('contact_hours');
 
 // Card 1
 $card1Title = get_field('card1Title');
@@ -31,9 +31,9 @@ $card2Content = get_field('card2Content');
         <div class="offer-additional-information-container-column offer-additional-information-container-column-other">
             <div class="offer-additional-information-container-column-subcontent offer-additional-information-container-column-other-subcontent">
                 <div>
-                    <p><i class="fa fa-envelope"></i> <?php echo esc_html($email); ?></p>
-                    <p><i class="fa fa-phone"></i> <?php echo esc_html($email); ?></p>
+                    <p><i class="fa fa-phone"></i> <?php echo esc_html($phone); ?></p>
                     <p><i class="fa fa-info-circle"></i> <?php echo esc_html($other); ?></p>
+                    <div class="offer-additional-information-container-column-subcontent-less-text"><?php echo $hours ?></div>
                 </div>
             </div>
         </div>
