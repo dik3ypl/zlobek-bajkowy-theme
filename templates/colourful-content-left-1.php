@@ -13,11 +13,11 @@ $contentImage = get_field('content_image');
 ?>
 
 <?php if ($pageTitle): ?>
-    <h1 class="page-title"><?php echo esc_html($pageTitle); ?></h1>
+    <h1 class="page-title" data-aos="fade-in"><?php echo esc_html($pageTitle); ?></h1>
 <?php endif; ?>
 
 <div class="content">
-    <div class="content-text content-background-3">
+    <div class="content-text content-background-3" data-aos="fade-right">
         <?php if ($contentTitle): ?>
             <h3><?php echo esc_html($contentTitle); ?></h3>
         <?php endif; ?>
@@ -25,7 +25,7 @@ $contentImage = get_field('content_image');
             <?php echo $contentText; ?>
         <?php endif; ?>
     </div>
-    <div class="content-image">
+    <div class="content-image" data-aos="fade-left">
         <?php if ($contentImage): ?>
             <img src="<?php echo esc_url($contentImage['url']); ?>" alt="<?php echo esc_attr($contentImage['alt']); ?>">
         <?php endif; ?>

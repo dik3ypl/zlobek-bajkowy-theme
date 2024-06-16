@@ -11,7 +11,7 @@ $contentBlocks = get_field('content_blocks');
 ?>
 
 <?php if ($pageTitle): ?>
-    <h1 class="page-title"><?php echo esc_html($pageTitle); ?></h1>
+    <h1 class="page-title" data-aos="fade-in"><?php echo esc_html($pageTitle); ?></h1>
 <?php endif; ?>
 
 <div class="posts-list">
@@ -24,12 +24,12 @@ $contentBlocks = get_field('content_blocks');
             $file = $block['file'];
             $backgroundClass = $index % 2 == 0 ? 'posts-list-background-2' : 'posts-list-background-1';
             ?>
-            <div class="posts-list-element <?php echo $backgroundClass; ?>">
-                <div class="posts-list-element-image posts-list-element-pdf">
+            <div class="posts-list-element <?php echo $backgroundClass; ?>" data-aos="fade-up">
+                <div class="posts-list-element-image posts-list-element-pdf" data-aos="fade-right">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/pdf.svg"
                          alt="<?php echo esc_attr($title); ?>">
                 </div>
-                <div class="posts-list-element-text">
+                <div class="posts-list-element-text" data-aos="fade-left">
                     <h3><?php echo esc_html($title); ?></h3>
                     <p><?php echo $text; ?></p>
                     <?php if ($file): ?>

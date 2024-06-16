@@ -11,7 +11,7 @@ $contentBlocks = get_field('content_blocks');
 ?>
 
 <?php if ($pageTitle): ?>
-    <h1 class="page-title"><?php echo esc_html($pageTitle); ?></h1>
+    <h1 class="page-title" data-aos="fade-in"><?php echo esc_html($pageTitle); ?></h1>
 <?php endif; ?>
 
 <div class="posts-list">
@@ -23,9 +23,10 @@ $contentBlocks = get_field('content_blocks');
             $text = $block['text'];
             $image = $block['image'];
             $backgroundClass = $index % 2 == 0 ? 'posts-list-background-2' : 'posts-list-background-1';
+            $aosAnimation = $index % 2 == 0 ? 'fade-right' : 'fade-left';
             ?>
-            <div class="posts-list-element <?php echo $backgroundClass; ?>">
-                <div class="posts-list-element-image">
+            <div class="posts-list-element <?php echo $backgroundClass; ?>" data-aos="<?php echo $aosAnimation; ?>">
+                <div class="posts-list-element-image" data-aos="zoom-in">
                     <?php if ($image): ?>
                         <img src="<?php echo esc_url($image['url']); ?>"
                              alt="<?php echo esc_attr($title); ?>">

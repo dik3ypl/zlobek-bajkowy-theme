@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import 'slick-carousel';
+import AOS from 'aos';
 
 // Navbar
 document.addEventListener('DOMContentLoaded', () => {
@@ -62,6 +63,12 @@ document.addEventListener('DOMContentLoaded', () => {
         }, step * 1000)
         starsBox.appendChild(star);
     }
+
+    AOS.init({
+        duration: 500,
+        easing: 'ease-out-quart',
+        once: true
+    });
 });
 
 // Slider
