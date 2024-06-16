@@ -40,7 +40,7 @@ get_header(); ?>
 <a href="<?php the_field('tile_bottom_link'); ?>" class="banner-with-image-right" data-aos="fade-left">
     <div class="banner-with-image-right-content">
         <h3><?php the_field('tile_bottom_title'); ?></h3>
-        <p><?php the_field('tile_bottom_content'); ?></p>
+        <p><?php the_field('tile_bottom_text'); ?></p>
     </div>
     <div class="banner-with-image-right-image">
         <?php $tile_bottom_image = get_field('tile_bottom_image'); ?>

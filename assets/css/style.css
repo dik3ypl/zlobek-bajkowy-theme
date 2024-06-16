@@ -513,7 +513,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: left;
-  position: relative;
+  position: absolute;
   bottom: 0;
   width: 100%;
   padding-left: 0 !important;
@@ -623,13 +623,6 @@ footer .footer-copyright p {
 
 .footer-section-title {
   text-align: center;
-}
-
-.footer-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .container {
