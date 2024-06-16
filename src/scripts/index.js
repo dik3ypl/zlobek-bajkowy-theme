@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     let footer = document.querySelector('footer');
-    document.querySelector('.clouds').style.marginBottom = (footer.offsetHeight - 10) + "px";
-
+    console.log(window.innerHeight, document.body.offsetHeight)
+    document.querySelector('.footer-container').style.height = (window.innerHeight - document.body.offsetHeight < 0 ? footer.offsetHeight + 200 : (window.innerHeight - document.body.offsetHeight) + footer.offsetHeight + 200) + "px";
     window.addEventListener('resize', () => {
         let footer = document.querySelector('footer');
-        document.querySelector('.clouds').style.marginBottom = (footer.offsetHeight - 10) + "px";
+        document.querySelector('.footer-container').style.height = (window.innerHeight - document.body.offsetHeight < 0 ? footer.offsetHeight + 200 : (window.innerHeight - document.body.offsetHeight) + footer.offsetHeight + 200) + "px";
     })
 
     const numStars = 50;
