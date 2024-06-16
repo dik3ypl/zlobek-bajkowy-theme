@@ -7,6 +7,7 @@
     <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon">
     <?php wp_head(); ?>
 </head>
 
