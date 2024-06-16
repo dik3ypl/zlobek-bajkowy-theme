@@ -13,7 +13,7 @@
   background-repeat: no-repeat;
   background-position: calc(100% - 1rem) 50%;
   background-size: 2.5rem;
-  transition: background-position 0.3s ease;
+  transition: background-position 0.3s ease !important;
   cursor: pointer;
 
   &-other {

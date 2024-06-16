@@ -31,7 +31,7 @@
 
   &-1 {
     background-color: $color-1;
-    transition: 0.3s;
+    transition: 0.3s !important;
 
     &:hover {
       background-color: $color-1-hover;
@@ -40,7 +40,7 @@
 
   &-2 {
     background-color: hsl(345, 92%, 64%);
-    transition: 0.3s;
+    transition: 0.3s !important;
 
     &:hover {
       background-color: hsl(14, 98%, 63%);
@@ -49,7 +49,7 @@
 
   &-3 {
     background-color: $color-3;
-    transition: 0.3s;
+    transition: 0.3s !important;
 
     &:hover {
       background-color: $color-3-hover;

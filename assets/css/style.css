@@ -452,7 +452,7 @@ main {
     height: 100vh;
     top: -100vh;
     background-color: #67D9FE;
-    transition: 0.4s;
+    transition: 0.4s !important;
     margin: 0;
     left: 0;
   }
@@ -469,7 +469,7 @@ main {
   }
   .navbar-revealed {
     top: 0;
-    transition: 0.4s;
+    transition: 0.4s !important;
     position: fixed;
   }
   .hamburger {
@@ -479,7 +479,7 @@ main {
     justify-content: space-around;
     width: 60px;
     height: 60px;
-    transition: 0.3s;
+    transition: 0.3s !important;
     z-index: 101;
   }
   .hamburger div {
@@ -487,7 +487,7 @@ main {
     height: 10px;
     width: 60px;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: 0.3s !important;
   }
   .hamburger-active :nth-child(1) {
     transform: translateY(15px) rotate(45deg);
@@ -513,7 +513,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   text-align: left;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   padding-left: 0 !important;
@@ -623,6 +623,13 @@ footer .footer-copyright p {
 
 .footer-section-title {
   text-align: center;
+}
+
+.footer-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .container {
@@ -792,21 +799,21 @@ footer .footer-copyright p {
 }
 .page-card-1 {
   background-color: #67D9FE;
-  transition: 0.3s;
+  transition: 0.3s !important;
 }
 .page-card-1:hover {
   background-color: #83defc;
 }
 .page-card-2 {
   background-color: hsl(345, 92%, 64%);
-  transition: 0.3s;
+  transition: 0.3s !important;
 }
 .page-card-2:hover {
   background-color: hsl(14, 98%, 63%);
 }
 .page-card-3 {
   background-color: #29d987;
-  transition: 0.3s;
+  transition: 0.3s !important;
 }
 .page-card-3:hover {
   background-color: #4be1a1;
@@ -838,7 +845,7 @@ footer .footer-copyright p {
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
-  transition: 0.3s;
+  transition: 0.3s !important;
 }
 .banner-with-image-left:hover {
   background-color: #4be1a1;
@@ -884,7 +891,7 @@ footer .footer-copyright p {
   padding: 1rem;
   align-items: center;
   justify-content: space-between;
-  transition: 0.3s;
+  transition: 0.3s !important;
 }
 .banner-with-image-right:hover {
   background-color: #83defc;
@@ -947,7 +954,7 @@ footer .footer-copyright p {
   background-repeat: no-repeat;
   background-position: calc(100% - 1rem) 50%;
   background-size: 2.5rem;
-  transition: background-position 0.3s ease;
+  transition: background-position 0.3s ease !important;
   cursor: pointer;
 }
 .arrow-button-other {
@@ -1118,7 +1125,7 @@ footer .footer-copyright p {
   text-decoration: none;
   border-radius: 15px;
   font-size: 1rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease !important;
   border: none;
   cursor: pointer;
 }
@@ -1265,7 +1272,7 @@ footer .footer-copyright p {
   padding: 0 !important;
   border-radius: 20px;
   flex: 1;
-  transition: 0.3s;
+  transition: 0.3s !important;
 }
 .posts-list-element:hover {
   width: 100%;
