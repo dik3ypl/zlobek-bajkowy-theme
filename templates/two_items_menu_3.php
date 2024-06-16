@@ -21,12 +21,12 @@ $card2Content = get_field('card2Content');
     <a href="<?php echo esc_url($card1Link); ?>" class="page-card page-card-1-additional page-card-1"
        data-aos="fade-up">
         <h3><?php echo esc_html($card1Title); ?></h3>
-        <p><?php echo esc_html($card1Content); ?></p>
+        <p><?php echo $card1Content; ?></p>
     </a>
     <a href="<?php echo esc_url($card2Link); ?>" class="page-card page-card-3-additional page-card-3" data-aos="fade-up"
        data-aos-delay="100">
         <h3><?php echo esc_html($card2Title); ?></h3>
-        <p><?php echo esc_html($card2Content); ?></p>
+        <p><?php echo $card2Content; ?></p>
     </a>
 </div>
 
