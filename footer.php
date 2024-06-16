@@ -28,10 +28,9 @@
             <p><i class="fa fa-envelope"></i> <?php the_field('contact_email', 'option'); ?></p>
             <p><i class="fa fa-phone"></i> <?php the_field('contact_phone', 'option'); ?></p>
         </div>
-        <div class="footer-column footer-column-right">
+        <div class="footer-column footer-column-middle">
             <p class="footer-section-title"><b><?php the_field('address_field_name', 'option'); ?></b></p>
             <div>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/address_footer.svg" alt="Address Icon">
                 <div>
                     <p><?php the_field('address_first_line', 'option'); ?></p>
                     <p><?php the_field('address_second_line', 'option'); ?></p>

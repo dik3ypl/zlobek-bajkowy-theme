@@ -32,6 +32,12 @@ footer {
       }
     }
 
+    &-middle {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     &-right {
       >div {
         display: flex;
@@ -128,7 +134,7 @@ footer {
   text-align: center;
 }
 
-.footer-container {
+div.footer-container {
   position: relative;
   display: flex;
   flex-direction: column;
