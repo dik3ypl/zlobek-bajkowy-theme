@@ -60,6 +60,7 @@ function get_latest_post_content()
             $article_title = get_field('article_title');
             $article_text = get_field('article_text');
             $article_image = get_field('article_image');
+            $article_link = get_permalink();
             ?>
             <a href="<?php echo esc_url($article_link); ?>">
                 <div class="dd-subcontent">
