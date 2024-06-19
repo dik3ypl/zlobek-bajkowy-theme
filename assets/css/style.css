@@ -1093,6 +1093,14 @@ div.footer-container {
   top: 450px;
 }
 
+.bg-canvas {
+  position: fixed;
+  z-index: -9;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
 #path2357 {
   width: 100%;
   /* Ensure the stroke is visible */
@@ -1370,8 +1378,8 @@ div.footer-container {
 }
 .offer-additional #pin-icon {
   position: absolute;
-  height: 300px;
-  width: 200px;
+  height: 400px;
+  width: 300px;
   top: -100px;
   left: 20px;
   object-fit: contain;
@@ -1407,7 +1415,8 @@ div.footer-container {
   text-align: right;
 }
 .offer-additional-information-container-column-subcontent div p {
-  color: #fec2b3 !important;
+  color: #fff !important;
+  font-size: 2.5rem;
 }
 @media (max-width: 500px) {
   .offer-additional-information-container-column-subcontent img {

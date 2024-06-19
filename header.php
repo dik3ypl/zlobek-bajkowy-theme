@@ -12,55 +12,56 @@
 </head>
 
 <body <?php body_class(); ?>>
-<header>
-    <a href="/" class="logo-box">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="">
-        <div>
-            <h2><?php bloginfo('name'); ?></h2>
-            <p><?php bloginfo('description'); ?></p>
-        </div>
-    </a>
+    <header>
+        <a href="/" class="logo-box">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/logo.png" alt="">
+            <div>
+                <h2><?php bloginfo('name'); ?></h2>
+                <p><?php bloginfo('description'); ?></p>
+            </div>
+        </a>
 
-    <ul class="navbar">
-        <?php
-        $menu_name = 'primary-menu';
-        if (($locations = get_nav_menu_locations()) && isset($locations[$menu_name])) {
-            $menu = wp_get_nav_menu_object($locations[$menu_name]);
-            $menu_items = wp_get_nav_menu_items($menu->term_id);
+        <ul class="navbar">
+            <?php
+            $menu_name = 'primary-menu';
+            if (($locations = get_nav_menu_locations()) && isset($locations[$menu_name])) {
+                $menu = wp_get_nav_menu_object($locations[$menu_name]);
+                $menu_items = wp_get_nav_menu_items($menu->term_id);
 
-            $menu_list = '';
-            foreach ((array)$menu_items as $key => $menu_item) {
-                if ($menu_item->menu_item_parent == 0) {
-                    $parent = $menu_item->ID;
-                    $menu_list .= '<li><a href="' . $menu_item->url . '">' . $menu_item->title . '</a>';
+                $menu_list = '';
+                foreach ((array)$menu_items as $key => $menu_item) {
+                    if ($menu_item->menu_item_parent == 0) {
+                        $parent = $menu_item->ID;
+                        $menu_list .= '<li><a href="' . $menu_item->url . '">' . $menu_item->title . '</a>';
 
-                    $submenu = '';
-                    foreach ($menu_items as $sub_key => $sub_menu_item) {
-                        if ($sub_menu_item->menu_item_parent == $parent) {
-                            $submenu .= '<li><a href="' . $sub_menu_item->url . '">' . $sub_menu_item->title . '</a></li>';
+                        $submenu = '';
+                        foreach ($menu_items as $sub_key => $sub_menu_item) {
+                            if ($sub_menu_item->menu_item_parent == $parent) {
+                                $submenu .= '<li><a href="' . $sub_menu_item->url . '">' . $sub_menu_item->title . '</a></li>';
+                            }
                         }
-                    }
 
-                    if ($submenu) {
-                        $menu_list .= '<div class="dropdown"><ul>' . $submenu . '</ul>';
-                        ob_start();
-                        get_latest_post_content();
-                        $menu_list .= ob_get_clean();
-                        $menu_list .= '</div>';
+                        if ($submenu) {
+                            $menu_list .= '<div class="dropdown"><ul>' . $submenu . '</ul>';
+                            ob_start();
+                            get_latest_post_content();
+                            $menu_list .= ob_get_clean();
+                            $menu_list .= '</div>';
+                        }
+                        $menu_list .= '</li>';
                     }
-                    $menu_list .= '</li>';
                 }
+                echo $menu_list;
             }
-            echo $menu_list;
-        }
-        ?>
-    </ul>
-    <div class="hamburger">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</header>
-<div class="bg-back"></div>
-<div class="bg-front"></div>
-<div class="container">
+            ?>
+        </ul>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <div class="bg-back"></div>
+    <canvas class="bg-canvas" id="bg-starfall"></canvas>
+    <!-- <div class="bg-front"></div> -->
+    <div class="container">

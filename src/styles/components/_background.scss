@@ -93,6 +93,14 @@
     top: 450px;
 }
 
+.bg-canvas {
+    position: fixed;
+    z-index: -9;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
 #path2357 {
     width: 100%;
     /* Ensure the stroke is visible */
