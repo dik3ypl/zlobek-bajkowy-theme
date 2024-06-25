@@ -3,6 +3,7 @@
   flex-wrap: wrap;
 
   #pin-icon {
+    display: block;
     position: absolute;
     height: 400px;
     width: 300px;
@@ -37,6 +38,10 @@
           p {
             color: #fff !important;
             font-size: 2.5rem;
+
+            @media (max-width: 500px) {
+              font-size: 2.1rem;
+            }
           }
         }
 

@@ -2,7 +2,7 @@
   "name": "projekt",
   "version": "1.0.0",
   "scripts": {
-    "build-sass": "sass src/styles/index.scss assets/js/style.css",
+    "build-sass": "sass src/styles/index.scss assets/css/style.css",
     "watch-sass": "sass --watch src/styles/index.scss:assets/css/style.css",
     "build-js": "webpack",
     "watch-js": "webpack --watch",

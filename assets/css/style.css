@@ -500,8 +500,19 @@ main {
   }
 }
 @media (max-width: 500px) {
-  .logo-box div {
-    display: none;
+  .logo-box {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .logo-box, .hamburger {
+    transform: scale(0.9);
+  }
+  .logo-box h2, .hamburger h2 {
+    font-size: 0.9rem;
+  }
+  .logo-box p, .hamburger p {
+    font-size: 0.63rem;
   }
 }
 footer {
@@ -1377,6 +1388,7 @@ div.footer-container {
   flex-wrap: wrap;
 }
 .offer-additional #pin-icon {
+  display: block;
   position: absolute;
   height: 400px;
   width: 300px;
@@ -1417,6 +1429,11 @@ div.footer-container {
 .offer-additional-information-container-column-subcontent div p {
   color: #fff !important;
   font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  .offer-additional-information-container-column-subcontent div p {
+    font-size: 2.1rem;
+  }
 }
 @media (max-width: 500px) {
   .offer-additional-information-container-column-subcontent img {
