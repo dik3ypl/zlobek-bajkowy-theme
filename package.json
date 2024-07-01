@@ -6,7 +6,8 @@
     "watch-sass": "sass --watch src/styles/index.scss:assets/css/style.css",
     "build-js": "webpack",
     "watch-js": "webpack --watch",
-    "watch": "concurrently \"npm run watch-sass\" \"npm run watch-js\""
+    "watch": "concurrently \"npm run watch-sass\" \"npm run watch-js\"",
+    "build": "concurrently \"npm run build-sass\" \"npm run build-js\""
   },
   "devDependencies": {
     "sass": "^1.32.0",

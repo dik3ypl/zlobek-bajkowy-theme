@@ -945,7 +945,7 @@ div.footer-container {
 }
 
 .page-title {
-  width: 96%;
+  width: calc(96% - 2rem);
   font-size: 3.2rem;
   margin: 1rem;
 }
@@ -1161,6 +1161,17 @@ div.footer-container {
 }
 .pdf-download .button:focus {
   outline: none;
+}
+
+.not-found-text {
+  width: 100%;
+  font-size: 1.4rem;
+  text-align: center;
+}
+@media (max-width: 992px) {
+  .not-found-text {
+    font-size: 1rem;
+  }
 }
 
 .post-image {
@@ -1571,6 +1582,22 @@ div.footer-container {
 .list-points-right {
   align-self: flex-end;
   background-color: #29d987;
+}
+
+.page-two-images-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.page-two-images-image-container {
+  width: 100%;
+  height: auto !important;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  display: flex;
+  align-items: center;
 }
 
 body {

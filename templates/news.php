@@ -56,6 +56,10 @@ $pageTitle = get_the_title();
             $index++;
         endwhile;
         wp_reset_postdata();
+    else:
+        ?>
+        <p class="not-found-text">Nic tu jeszcze nie ma. W przyszłości będą dostępne wpisy.</p>
+    <?php
     endif;
     ?>
 </div>

@@ -43,7 +43,7 @@ $contentBlocks = get_field('content_blocks');
             <?php $index++; ?>
         <?php endforeach; ?>
     <?php else: ?>
-        <p>No content blocks found.</p>
+        <p class="not-found-text">Nic tu jeszcze nie ma. W przyszłości będą dostępne wpisy.</p>
     <?php endif; ?>
 </div>
 
